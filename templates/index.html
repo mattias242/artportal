@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site_name }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>{{ site_name }}</h1>
+        <p class="subtitle">{{ site_description }}</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <input type="text" id="filter-input" placeholder="Sök art...">
+            <select id="sort-select">
+                <option value="date-desc">Senaste först</option>
+                <option value="date-asc">Äldsta först</option>
+                <option value="species-asc">Art (A-Ö)</option>
+                <option value="count-desc">Flest individer</option>
+            </select>
+        </div>
+
+        <div id="summary" class="summary"></div>
+
+        <div id="observations" class="card-list"></div>
+
+        <div id="loading" class="loading">Laddar observationer...</div>
+        <div id="error" class="error" hidden></div>
+    </main>
+
+    <footer>
+        <p>Data från <a href="https://www.artportalen.se" target="_blank" rel="noopener">Artportalen</a> via SOS API</p>
+        <p class="footer-org">Stenungsunds Naturskyddsförening</p>
+    </footer>
+
+    <script>
+        window.__daysBack = {{ days_back }};
+    </script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
