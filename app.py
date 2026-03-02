@@ -32,6 +32,7 @@ def transform_observations(raw_records):
 
         results.append(
             {
+                "taxonId": taxon.get("id"),
                 "taxonVernacular": (taxon.get("vernacularName", "") or "").capitalize(),
                 "taxonScientific": taxon.get("scientificName", ""),
                 "date": obs_date,

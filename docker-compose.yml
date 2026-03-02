@@ -1,0 +1,9 @@
+services:
+  artportal:
+    build: .
+    container_name: artportal
+    restart: unless-stopped
+    ports:
+      - "5100:5000"
+    env_file:
+      - .env

@@ -7,6 +7,7 @@ Konfigurera valfri plats och tidsperiod via miljövariabler. Standardinställnin
 ## Funktioner
 
 - Visar senaste observationer med art, datum, observatör och antal
+- Klicka på en observation för att se fågelbild (via Wikipedia) och länk till [Artfakta.se](https://artfakta.se)
 - Sök/filtrera på artnamn i realtid
 - Sortera efter datum, art eller antal individer
 - Mobilanpassad layout (responsiv)

@@ -98,6 +98,12 @@ main {
     border-radius: var(--radius);
     padding: 14px 16px;
     box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.observation-card:active {
+    transform: scale(0.98);
 }
 
 .species-name {
@@ -164,6 +170,113 @@ footer a {
     font-weight: 500;
 }
 
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    position: relative;
+    background: var(--color-card);
+    border-radius: var(--radius);
+    max-width: 400px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.modal-image-wrapper {
+    position: relative;
+    min-height: 180px;
+    background: var(--color-bg);
+    border-radius: var(--radius) var(--radius) 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: var(--radius) var(--radius) 0 0;
+    display: block;
+}
+
+.modal-loading,
+.modal-no-image {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.modal-info {
+    padding: 16px;
+}
+
+.modal-vernacular {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.modal-scientific {
+    font-style: italic;
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+.modal-description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+.modal-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
 @media (min-width: 768px) {
     header h1 {
         font-size: 1.6rem;
@@ -177,5 +290,13 @@ footer a {
 
     .controls {
         padding: 16px 16px 8px;
+    }
+
+    .observation-card:hover {
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .modal-content {
+        max-width: 480px;
     }
 }

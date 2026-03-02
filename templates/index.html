@@ -36,6 +36,24 @@
         <p class="footer-org">Stenungsunds Naturskyddsförening</p>
     </footer>
 
+    <div id="bird-modal" class="modal" hidden>
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Stäng">&times;</button>
+            <div class="modal-image-wrapper">
+                <div class="modal-loading">Laddar bild...</div>
+                <img class="modal-image" alt="" hidden>
+                <div class="modal-no-image" hidden>Ingen bild tillgänglig</div>
+            </div>
+            <div class="modal-info">
+                <h2 class="modal-vernacular"></h2>
+                <p class="modal-scientific"></p>
+                <p class="modal-description"></p>
+                <a class="modal-link" href="#" target="_blank" rel="noopener">Läs mer på Artfakta.se</a>
+            </div>
+        </div>
+    </div>
+
     <script>
         window.__daysBack = {{ days_back }};
     </script>

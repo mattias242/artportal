@@ -1,0 +1,12 @@
+.git
+.gitignore
+.DS_Store
+__pycache__
+*.pyc
+.venv
+.env
+.env.example
+.claude
+CLAUDE.md
+README.md
+deploy.sh

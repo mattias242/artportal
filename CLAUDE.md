@@ -28,4 +28,4 @@ Requires `.env` with `SOS_API_KEY`. Use `SOS_API_KEY=mock` for dev without a key
 - `config.py` - Configuration from environment variables
 - `templates/index.html` - Jinja2 template (Swedish)
 - `static/css/style.css` - Mobile-first responsive CSS
-- `static/js/app.js` - Frontend fetch, render, filter, sort
+- `static/js/app.js` - Frontend fetch, render, filter, sort, bird info modal (Wikipedia API)

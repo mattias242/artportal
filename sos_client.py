@@ -4,49 +4,49 @@ from config import Config
 
 MOCK_DATA = [
     {
-        "taxon": {"vernacularName": "Knölsvan", "scientificName": "Cygnus olor"},
+        "taxon": {"id": 100045, "vernacularName": "Knölsvan", "scientificName": "Cygnus olor"},
         "event": {"plainStartDate": "2026-03-01", "plainStartTime": "08:15"},
         "occurrence": {"organismQuantityInt": 4, "organismQuantityUnit": "individer", "recordedBy": "Anna Svensson"},
         "location": {"locality": "Jordhammarsviken", "municipality": {"name": "Stenungsund"}},
     },
     {
-        "taxon": {"vernacularName": "Vigg", "scientificName": "Aythya fuligula"},
+        "taxon": {"id": 100067, "vernacularName": "Vigg", "scientificName": "Aythya fuligula"},
         "event": {"plainStartDate": "2026-03-01", "plainStartTime": "08:15"},
         "occurrence": {"organismQuantityInt": 12, "organismQuantityUnit": "individer", "recordedBy": "Anna Svensson"},
         "location": {"locality": "Jordhammarsviken", "municipality": {"name": "Stenungsund"}},
     },
     {
-        "taxon": {"vernacularName": "Storskrake", "scientificName": "Mergus merganser"},
+        "taxon": {"id": 100096, "vernacularName": "Storskrake", "scientificName": "Mergus merganser"},
         "event": {"plainStartDate": "2026-02-28", "plainStartTime": "10:30"},
         "occurrence": {"organismQuantityInt": 6, "organismQuantityUnit": "individer", "recordedBy": "Erik Johansson"},
         "location": {"locality": "Jordhammarsviken", "municipality": {"name": "Stenungsund"}},
     },
     {
-        "taxon": {"vernacularName": "Havsörn", "scientificName": "Haliaeetus albicilla"},
+        "taxon": {"id": 100550, "vernacularName": "Havsörn", "scientificName": "Haliaeetus albicilla"},
         "event": {"plainStartDate": "2026-02-28", "plainStartTime": "11:45"},
         "occurrence": {"organismQuantityInt": 1, "organismQuantityUnit": "individer", "recordedBy": "Lars Nilsson"},
         "location": {"locality": "Jordhammarsviken", "municipality": {"name": "Stenungsund"}},
     },
     {
-        "taxon": {"vernacularName": "Talgoxe", "scientificName": "Parus major"},
+        "taxon": {"id": 102956, "vernacularName": "Talgoxe", "scientificName": "Parus major"},
         "event": {"plainStartDate": "2026-02-27", "plainStartTime": "09:00"},
         "occurrence": {"organismQuantityInt": 3, "organismQuantityUnit": "individer", "recordedBy": "Maria Karlsson"},
         "location": {"locality": "Jordhammarsviken", "municipality": {"name": "Stenungsund"}},
     },
     {
-        "taxon": {"vernacularName": "Gråhäger", "scientificName": "Ardea cinerea"},
+        "taxon": {"id": 100376, "vernacularName": "Gråhäger", "scientificName": "Ardea cinerea"},
         "event": {"plainStartDate": "2026-02-27", "plainStartTime": "07:30"},
         "occurrence": {"organismQuantityInt": 2, "organismQuantityUnit": "individer", "recordedBy": "Erik Johansson"},
         "location": {"locality": "Jordhammarsviken", "municipality": {"name": "Stenungsund"}},
     },
     {
-        "taxon": {"vernacularName": "Sothöna", "scientificName": "Fulica atra"},
+        "taxon": {"id": 100179, "vernacularName": "Sothöna", "scientificName": "Fulica atra"},
         "event": {"plainStartDate": "2026-02-26", "plainStartTime": "14:20"},
         "occurrence": {"organismQuantityInt": 8, "organismQuantityUnit": "individer", "recordedBy": "Anna Svensson"},
         "location": {"locality": "Jordhammarsviken", "municipality": {"name": "Stenungsund"}},
     },
     {
-        "taxon": {"vernacularName": "Blåmes", "scientificName": "Cyanistes caeruleus"},
+        "taxon": {"id": 102954, "vernacularName": "Blåmes", "scientificName": "Cyanistes caeruleus"},
         "event": {"plainStartDate": "2026-02-25", "plainStartTime": "08:45"},
         "occurrence": {"organismQuantityInt": 5, "organismQuantityUnit": "individer", "recordedBy": "Maria Karlsson"},
         "location": {"locality": "Jordhammarsviken", "municipality": {"name": "Stenungsund"}},
