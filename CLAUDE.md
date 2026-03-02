@@ -1,6 +1,6 @@
 # Project: Artportal
 
-Mobile-friendly bird observation viewer for Jordhammarsviken, Stenungsund.
+Mobile-friendly species observation viewer. Configurable for any location and species group via `.env`. Defaults to bird observations at Jordhammarsviken, Stenungsund.
 
 ## Git workflow
 
