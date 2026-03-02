@@ -16,6 +16,6 @@ class Config:
     SITE_RADIUS_METERS = int(os.getenv("SITE_RADIUS_METERS", "2000"))
 
     DAYS_BACK = int(os.getenv("DAYS_BACK", "7"))
-    TAXON_ID = int(os.getenv("TAXON_ID", "4000104"))  # 4000104 = Aves (fåglar)
+    TAXON_ID = 4000104  # Aves (alla fåglar)
     CACHE_TTL = int(os.getenv("CACHE_TTL", "300"))
     FLASK_PORT = int(os.getenv("FLASK_PORT", "5000"))

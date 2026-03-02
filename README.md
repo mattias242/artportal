@@ -1,8 +1,8 @@
 # Artportal
 
-Mobilanpassad webbsida som visar senaste artobservationer från [Artportalen](https://www.artportalen.se) via [SOS API:et](https://github.com/biodiversitydata-se/SOS) (Species Observation System) från SLU Artdatabanken.
+Mobilanpassad webbsida som visar senaste fågelobservationer från [Artportalen](https://www.artportalen.se) via [SOS API:et](https://github.com/biodiversitydata-se/SOS) (Species Observation System) från SLU Artdatabanken.
 
-Konfigurera valfri plats, artgrupp och tidsperiod via miljövariabler. Standardinställningen visar fågelobservationer vid Jordhammarsviken, Stenungsund.
+Konfigurera valfri plats och tidsperiod via miljövariabler. Standardinställningen visar fågelobservationer vid Jordhammarsviken, Stenungsund.
 
 ## Funktioner
 
@@ -56,7 +56,6 @@ Alla inställningar görs i `.env`:
 | `SITE_LATITUDE` | Latitud för platsen | 58.073 |
 | `SITE_LONGITUDE` | Longitud för platsen | 11.793 |
 | `SITE_RADIUS_METERS` | Sökradie i meter | 2000 |
-| `TAXON_ID` | Artgrupp (4000104=fåglar, 4000107=däggdjur, 0=alla) | 4000104 |
 | `DAYS_BACK` | Antal dagar bakåt | 7 |
 | `CACHE_TTL` | Cache-tid i sekunder | 300 |
 
